@@ -58,6 +58,9 @@ jobs:
         environment:
           <<: *image_config
 
+    steps:
+      - checkout
+
       - run:
           name: bats tests
           command: |
